@@ -1,0 +1,9 @@
+____flutter____
+auto import works wtih <c-y>
+snippets
+
+___general___
+check R and python syntax etx
+nerdtree like tutorial
+gitlense?
+
