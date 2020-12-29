@@ -5,7 +5,9 @@
 inoremap jj <Esc>
 inoremap JJ <Esc>
 inoremap jk <Esc>
-
+tnoremap jj <C-\><C-n>
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 " Tab navigation.
 inoremap <C-t>     <Esc>:tabnew<CR>

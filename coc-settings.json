@@ -1,0 +1,20 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "rust",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "dart",
+    "typescript",
+    "Rscript",
+    "R"
+  ],
+  "tsserver.tsdk": ".yarn/sdks/typescript/lib",
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks"
+}

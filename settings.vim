@@ -59,7 +59,7 @@ set laststatus=2
 "=====================================================
 "" AirLine settings
 "=====================================================
-let g:airline_theme='badwolf'
+" let g:airline_theme='badwolf'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline_powerline_fonts=1
@@ -79,7 +79,7 @@ let NERDTreeMapOpenInTab='<SPACE>'
 "" Riv.vim settings
 "=====================================================
 let g:riv_disable_folding=1
-
+au! BufNewFile,BufRead *.R,*.Rout,*.r,*.Rhistory,*.Rt,*.Rout.save,*.Rout.fail setf r
 " source vimrc on write
 map <leader>vimrc :tabe ~/.vim/.vimrc<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC

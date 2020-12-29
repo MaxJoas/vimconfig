@@ -1,7 +1,9 @@
 " Some of these key choices were arbitrary;
 " it's just an example.
-nnoremap <leader>fa :FlutterRun<cr>
-nnoremap <leader>fq :FlutterQuit<cr>
-nnoremap <leader>fr :FlutterHotReload<cr>
-nnoremap <leader>fR :FlutterHotRestart<cr>
-nnoremap <leader>fD :FlutterVisualDebug<cr>
+nnoremap fa :FlutterRun<cr> Pixel 2 API 27 <cr>
+nnoremap fq :FlutterQuit<cr>
+nnoremap fr :FlutterHotReload<cr>
+nnoremap <leader>fr :FlutterHotRestart<cr>
+nnoremap <leader>fd :FlutterVisualDebug<cr>
+nnoremap fl :FlutterEmulatorsLaunch Pixel 2 API 27 <cr>
+nnoremap fb :FlutterRun -d chrome <cr>

@@ -98,6 +98,7 @@ let g:airline_theme = 'codedark'
 set t_Co=256
 set t_ut=
 colorscheme codedark
+set autoread
 source ~/.config/nvim/mappings.vim
 source ~/.config/nvim/settings.vim
 source ~/.config/nvim/plugins/autocomplete.vim
@@ -105,5 +106,6 @@ source ~/.config/nvim/langs_config/nvimr.vim
 source ~/.config/nvim/langs_config/python.vim
 source ~/.config/nvim/langs_config/flutter.vim
 source ~/.config/nvim/plugins/fzf.vim
+source ~/.config/nvim/langs_config/r.vim
 
 
