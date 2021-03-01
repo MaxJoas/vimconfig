@@ -9,6 +9,7 @@
     "yaml",
     "json",
     "python",
+    "py",
     "dart",
     "typescript",
     "Rscript",
@@ -16,5 +17,14 @@
   ],
   "tsserver.tsdk": ".yarn/sdks/typescript/lib",
   "eslint.packageManager": "yarn",
-  "eslint.nodePath": ".yarn/sdks"
+  "eslint.nodePath": ".yarn/sdks",
+  "cSpell.userWords": [
+    "dropna",
+    "dtype",
+    "fillna",
+    "groupby",
+    "isna",
+    "nunique",
+    "sklearn"
+  ]
 }
