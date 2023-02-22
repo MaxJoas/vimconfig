@@ -17,6 +17,7 @@ set rtp+=~/.config/nvim/bundle/Vundle.vim
 "=====================================================
 filetype off
 set rtp+=$vundle
+
 call vundle#begin()
 
     Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
@@ -29,6 +30,7 @@ call vundle#begin()
     Plugin 'airblade/vim-gitgutter'
     Plugin 'junegunn/fzf.vim'
     Plugin 'junegunn/fzf'
+    Plugin 'github/copilot.vim'
 
     "-------------------=== Other ===-------------------------------
     Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
@@ -37,7 +39,7 @@ call vundle#begin()
     Plugin 'natebosch/vim-lsc'
     Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
     Plugin 'christoomey/vim-tmux-navigator'     " tmux spit navigation
-    Plugin 'neoclide/coc.nvim'
+    Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 
     "-------------------=== colorscheme ===-------------------------------
@@ -46,6 +48,7 @@ call vundle#begin()
     Plugin 'bluz71/vim-nightfly-guicolors'
     Plugin 'tomasiser/vim-code-dark'
     Plugin 'hzchirs/vim-material'
+    Plugin 'rakr/vim-one'
 
     "-------------------=== Languages support ===-------------------
     Plugin 'tpope/vim-commentary'               " Comment stuff out
@@ -55,6 +58,8 @@ call vundle#begin()
     "-------------------=== Python  ===-----------------------------
     Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
     Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
+    Plugin 'tell-k/vim-autopep8'
+    Plugin 'psf/black'
 
     "-----------------=== vimcmdline ===--------------------------------
     Plugin 'jalvesaq/nvimcom'
@@ -93,11 +98,9 @@ call vundle#end()                           " required
 filetype on
 filetype plugin on
 filetype plugin indent on
-colorscheme codedark
-let g:airline_theme = 'codedark'
+colorscheme one
+let g:airline_theme = 'one'
 set t_Co=256
-set t_ut=
-colorscheme codedark
 set autoread
 source ~/.config/nvim/mappings.vim
 source ~/.config/nvim/settings.vim

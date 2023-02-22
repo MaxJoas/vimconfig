@@ -48,3 +48,31 @@ nnoremap <c-j> :TmuxNavigateDown<cr>
 nnoremap <c-k> :TmuxNavigateUp<cr>
 nnoremap <c-l> :TmuxNavigateRight<cr>
 
+
+"=====================================================
+" Copilot mappings
+" remap Copilot panel to <C-c>
+nnoremap <C-c> :Copilot panel<CR>
+
+"=====================================================
+"formatting
+"=====================================================
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR> "autoformat on F8 press
+
+"=====================================================
+"Toggle Autocomplete engine, when copilot is active deactive autocomplete coc
+"and vice versa
+"=====================================================
+nnoremap <F9> :call EnableCopilot()<CR>
+function! EnableCopilot()
+    let b:coc_suggest_disable = 1
+    :Copilot enable <CR>
+endfunction
+
+nnoremap <F10> :call DisableCopilot()<CR>
+function! DisableCopilot()
+    let b:coc_suggest_disable = 0
+    :Copilot disable <CR>
+endfunction
+
+
