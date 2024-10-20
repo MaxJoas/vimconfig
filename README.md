@@ -2,7 +2,7 @@
 
 In this repo I want to share my neovim setup. Neovim is my main IDE, so I put some customization in this setup.
 The keybindings and language support are based on my preferences and probably require some adjustments for your needs.
-For now I just explain how to get everything running (mainly for myself, when I need to runf vim on another machine)
+For now I just explain how to get everything running (mainly for myself, when I need to run vim on another machine)
 Maybe I'll provide extended information and usecases in the future.
 
 ## Requirements
@@ -23,7 +23,14 @@ Maybe I'll provide extended information and usecases in the future.
     - open `~/.config/nvim/init.vim`
     - type `PluginInstall`
 5. Done
-
+6. Troubleshooting: If you encounter this warning: `[coc.nvim] build/index.js not found, please compile coc.nvim by: npm run build`
+    - install yarn with npm install --global yarn
+    - then run:
+```
+cd ~/.vim/bundle/coc.nvim
+yarn install
+yarn build
+```
 ## Update nvim without root access
 - got to https://github.com/neovim/neovim/releases
 - download the zipped version of vim and unzip
